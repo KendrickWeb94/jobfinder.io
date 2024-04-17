@@ -12,15 +12,13 @@ import {
 /* eslint-disable react/prop-types */
 import {
   MenuOutlined,
-  MobileOutlined,
   QuestionCircleFilled,
-  UserOutlined,
+  
 } from "@ant-design/icons";
 import NavItems from "./constants/NavItems";
-import PrimaryBtn from "./constants/PrimaryBtn";
 import { useState, useEffect } from "react";
 import FAQs from "./Pages/FAQ";
-import { FaNewspaper } from "react-icons/fa";
+
 
 function App() {
   const router = createBrowserRouter(
@@ -80,7 +78,7 @@ const Root = () => {
                 Job<span className=" text-blue-400">Finder.</span>
               </div>
             </Link>
-            <div>
+            <div
               className={`p-5 smooth md:bg-transparent ds:bg-black ds:h-auto rounded-md md:h-auto ds:fixed md:static md:hidden ds:block md:left-0 lg:block 2xl:block xl:block ${
                 isMenuOpen ? "ds:hidden smooth" : "ds:block smooth"
               }`}
@@ -91,7 +89,11 @@ const Root = () => {
                     <NavItems link="FAQS" />
                     <QuestionCircleFilled className=" text-zinc-500" />
                   </Link>
-                  
+                 
+                </div>
+
+               
+            
               </div>
             </div>
             <div className=" sm:block  ds:block xxs:block md:block lg:hidden 2xl:hidden xl:hidden">
@@ -106,7 +108,6 @@ const Root = () => {
         <Outlet />
       </div>
     </div>
-      </div>
   );
 };
 
