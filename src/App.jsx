@@ -20,10 +20,6 @@ import NavItems from "./constants/NavItems";
 import PrimaryBtn from "./constants/PrimaryBtn";
 import { useState, useEffect } from "react";
 import FAQs from "./Pages/FAQ";
-import AboutApp from "./Pages/AboutApp";
-import Profile from "./Auth/Profile";
-import Download from "./Pages/Download";
-import UploadResume from "./Pages/UploadResume";
 import { FaNewspaper } from "react-icons/fa";
 
 function App() {
@@ -32,10 +28,6 @@ function App() {
       <Route path="/" element={<Root />}>
         <Route index element={<Homepage />} />
         <Route path="/FAQs" element={<FAQs />} />
-        <Route path="/AboutApp" element={<AboutApp />} />
-        <Route path="/Download" element={<Download />} />
-        <Route path="/UploadResume" element={<UploadResume />} />
-        
       </Route>
     )
   );
@@ -99,10 +91,6 @@ const Root = () => {
                     <NavItems link="FAQS" />
                     <QuestionCircleFilled className=" text-zinc-500" />
                   </Link>
-
-                <Link to="/UploadResume" className=" ds:pt-5 md:pt-0">
-                  <PrimaryBtn />
-                </Link>
               </div>
             </div>
             <div className=" sm:block  ds:block xxs:block md:block lg:hidden 2xl:hidden xl:hidden">
