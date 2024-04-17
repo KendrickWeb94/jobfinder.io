@@ -91,6 +91,7 @@ const Root = () => {
                     <NavItems link="FAQS" />
                     <QuestionCircleFilled className=" text-zinc-500" />
                   </Link>
+                  
               </div>
             </div>
             <div className=" sm:block  ds:block xxs:block md:block lg:hidden 2xl:hidden xl:hidden">
@@ -105,6 +106,7 @@ const Root = () => {
         <Outlet />
       </div>
     </div>
+      </div>
   );
 };
 
