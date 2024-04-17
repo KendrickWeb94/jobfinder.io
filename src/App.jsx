@@ -35,7 +35,7 @@ function App() {
         <Route path="/AboutApp" element={<AboutApp />} />
         <Route path="/Download" element={<Download />} />
         <Route path="/UploadResume" element={<UploadResume />} />
-        <Route path="/Profile" element={<Profile />} />
+        
       </Route>
     )
   );
@@ -99,26 +99,9 @@ const Root = () => {
                     <NavItems link="FAQS" />
                     <QuestionCircleFilled className=" text-zinc-500" />
                   </Link>
-                  <Link to="/AboutApp" className=" flex gap-2 items-center">
-                    <NavItems link="How To Use The App" />
-                    <MobileOutlined className=" text-zinc-500" />
-                  </Link>
-                  <Link to="/AboutApp" className=" flex gap-3 items-center">
-                    <NavItems link="Blogs/News & Updates" />
-                    <FaNewspaper className=" text-zinc-500" />
-                  </Link>
-                </div>
 
                 <Link to="/UploadResume" className=" ds:pt-5 md:pt-0">
                   <PrimaryBtn />
-                </Link>
-                <Link to="/Profile">
-                  <a href="#">
-                    <div className="   ds:py-5 md:py-0 font-normal bg-gradient-to-r plus custom-group from-blue-200 to-blue-400 bg-clip-text text-transparent text-sm flex items-center gap-3">
-                      <UserOutlined className="text-black p-1 rounded-full bg-gradient-to-r from-blue-200 to-blue-400" />
-                      Account
-                    </div>
-                  </a>
                 </Link>
               </div>
             </div>
