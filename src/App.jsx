@@ -80,7 +80,7 @@ const Root = () => {
                 Job<span className=" text-blue-400">Finder.</span>
               </div>
             </Link>
-            <div
+            <div>
               className={`p-5 smooth md:bg-transparent ds:bg-black ds:h-auto rounded-md md:h-auto ds:fixed md:static md:hidden ds:block md:left-0 lg:block 2xl:block xl:block ${
                 isMenuOpen ? "ds:hidden smooth" : "ds:block smooth"
               }`}
