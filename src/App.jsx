@@ -81,7 +81,7 @@ const Root = () => {
             <div
               className="p-5 smooth">
               <div className=" flex">
-                <div className=" flex plus md:flex-row ds:flex-col ds:items-start md:items-center md:space-y-0  ds:space-y-10 text-xs md:space-x-5">
+                <div className=" flex plus flex-row">
                   <Link to="/FAQs" className=" flex gap-2 items-center">
                     <NavItems link="FAQS" />
                     <QuestionCircleFilled className=" text-zinc-500" />
