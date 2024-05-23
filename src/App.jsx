@@ -79,7 +79,7 @@ const Root = () => {
               </div>
             </Link>
             <div
-              className={`p-5 smooth>
+              className="p-5 smooth">
               <div className=" flex">
                 <div className=" flex plus md:flex-row ds:flex-col ds:items-start md:items-center md:space-y-0  ds:space-y-10 text-xs md:space-x-5">
                   <Link to="/FAQs" className=" flex gap-2 items-center">
