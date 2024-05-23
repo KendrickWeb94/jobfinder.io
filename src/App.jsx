@@ -79,11 +79,8 @@ const Root = () => {
               </div>
             </Link>
             <div
-              className={`p-5 smooth md:bg-transparent ds:bg-black ds:h-auto rounded-md md:h-auto ds:fixed md:static md:hidden ds:block md:left-0 lg:block 2xl:block xl:block ${
-                isMenuOpen ? "ds:hidden smooth" : "ds:block smooth"
-              }`}
-            >
-              <div className=" flex ds:flex-col md:flex-row md:items-center md:space-x-8 md:space-y-0 ds:space-y-8">
+              className={`p-5 smooth>
+              <div className=" flex">
                 <div className=" flex plus md:flex-row ds:flex-col ds:items-start md:items-center md:space-y-0  ds:space-y-10 text-xs md:space-x-5">
                   <Link to="/FAQs" className=" flex gap-2 items-center">
                     <NavItems link="FAQS" />
@@ -96,11 +93,7 @@ const Root = () => {
             
               </div>
             </div>
-            <div className=" sm:block  ds:block xxs:block md:block lg:hidden 2xl:hidden xl:hidden">
-              <span className=" p-2 flex items-center justify-center bg-white text-black rounded-md border border-zinc-400">
-                <MenuOutlined size={40} onClick={toggleMenu} />
-              </span>
-            </div>
+            
           </div>
         </div>
       </div>
