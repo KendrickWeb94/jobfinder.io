@@ -1,5 +1,0 @@
-blue
-green
-gray, white
-yellow,amber
-black
