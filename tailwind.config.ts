@@ -18,7 +18,16 @@ const config = {
       },
     },
     extend: {
+      screens: {
+        "2xl": "1400px",
+        "ds": "320px",
+        "xxs" :"350px",
+        "xs": "480px",
+        "bs": "520px"
+      },
       colors: {
+        "primay-blue": "#0A65CC" ,
+        "fade": "#F1F2F4", 
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

@@ -8,6 +8,7 @@ import {
   SignedOut,
   UserButton
 } from '@clerk/nextjs'
+import Navbar from "@/components/shared/Navbar";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -23,9 +24,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <ClerkProvider>
+  <ClerkProvider >
     <html lang='en' suppressHydrationWarning >
-      <body>
+      <body className="w-full h-auto">
+        <Navbar />
         {children}
       </body>
     </html>
