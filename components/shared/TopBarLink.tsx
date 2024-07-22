@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import navLinks, { navlink } from '@/components/data/navbar'; 
 import { Phone, PhoneCall } from 'lucide-react';
+import { CountrySelect } from '../ui/country-select';
 
 interface TopBarLinkProps {
 
@@ -35,8 +36,11 @@ const TopBarLink: React.FC<TopBarLinkProps> = () => {
               </li>
             ))}
           </ul>
-          <div className="flex items-center gap-4">
+          <div className="flex phone_number items-center gap-4">
             <div className=" flex items-center gap-3 text-black-fade text-sm"><PhoneCall size="17"/><p>090-184-35807</p></div>
+            <div className="countries">
+              <CountrySelect />
+            </div>
           </div>
         </div>
       </div>
