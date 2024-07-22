@@ -28,6 +28,9 @@ const config = {
       colors: {
         "primay-blue": "#0A65CC" ,
         "fade": "#F1F2F4", 
+        "link-text": "#5E6670",
+        "text-light": "#9199A3",
+        "black-fade": "#18191C",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

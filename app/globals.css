@@ -3,4 +3,32 @@
 @tailwind utilities;
 
 
+@layer components {
+    .smooth {
+      @apply transition-all delay-500 duration-500 ease-in-out;
+    }
+    .flex-center {
+      @apply flex items-center justify-center;
+    }
+  }
+  .nun {
+    font-family: "Nunito Sans", sans-serif;
+  }
+  
+  .z-1{
+    z-index: -1;
+  }
+  
+  plus {
+    font-family: "Plus Jakarta Sans", sans-serif;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .z-lg{
+    z-index: 99999999;
+  }
 
