@@ -31,6 +31,7 @@ const config = {
         "link-text": "#5E6670",
         "text-light": "#9199A3",
         "black-fade": "#18191C",
+        "light-border": "#E4E5E8",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

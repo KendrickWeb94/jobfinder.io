@@ -21,6 +21,7 @@
         "class-variance-authority": "^0.7.0",
         "clsx": "^2.1.1",
         "express": "^4.19.2",
+        "framer-motion": "^11.3.9",
         "jsonwebtoken": "^9.0.2",
         "lucide-react": "^0.408.0",
         "mongoose": "^8.5.1",

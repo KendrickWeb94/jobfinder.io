@@ -31,4 +31,19 @@
   .z-lg{
     z-index: 99999999;
   }
+  .z-xl{
+    z-index: 999999999999;
+  }
+
+  .rounded-1{
+    border-radius: 3px;
+  }
+
+  .rounded-2{
+    border-radius: 8px;
+  }
+
+  .rounded-3{
+    border-radius: 12px;
+  }
 
