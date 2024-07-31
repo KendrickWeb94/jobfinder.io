@@ -7,6 +7,8 @@ import { Button } from "@/components/ui/button";
 import { useRef } from "react";
 import { motion } from "framer-motion";
 import { UserButton } from "@clerk/nextjs";
+import Link from "next/link";
+
 interface TopBarLinkProps {}
 
 export const ResponsiveNavbar: React.FC<TopBarLinkProps> = () => {
@@ -46,7 +48,7 @@ export const ResponsiveNavbar: React.FC<TopBarLinkProps> = () => {
               variant={"outline"} onClick={toggle}
               className="border rounded-1 hover:bg-primay-blue hover:text-white smooth border-primay-blue text-sm text-primay-blue"
             >
-              Sign In
+               <Link href="/sign-up">Get Started</Link>
             </Button>
             <motion.div className="" ref={constraintsRef}>
               <motion.div className="" drag dragConstraints={constraintsRef}>

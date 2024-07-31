@@ -10,6 +10,7 @@ import { motion } from "framer-motion";
 import { SearchBar } from "./SearchBar";
 import { Search, Menu } from "lucide-react";
 import { ResponsiveNavbar } from "../global/tools/ResponsiveNavbar";
+import Link from "next/link";
 
 const Navbar = () => {
    const [togglenav , settogglenav] = useState(false);
@@ -24,18 +25,20 @@ const Navbar = () => {
         <ResponsiveNavbar />
       </div>
       <TopBarLink />
-      <div className="w-full mx-auto max-w-[85%] p-2">
+      <div className="w-full mx-auto max-w-[82%] p-2">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
             <div className=" logo_section">
               <Image src={logo} alt="logo-img " className="  w-40" />
               <div className="sr-only">Logo-image</div>
             </div>
-            <div className="ds:hidden xs:block"></div>
+            <div className="ds:hidden xs:block">
+              <SearchBar />
+            </div>
           </div>
           <div className="flex items-center gap-4">
             <Search size={17} className="text-primay-blue xs:hidden block" />
-             <button className="flex md:hidden items-center justify-center w-auto p-2 rounded-2 bg-primay-blue text-white" onClick={toggle}>
+             <button className="flex mx-1 md:hidden items-center justify-center w-auto p-2 rounded-2 bg-primay-blue text-white" onClick={toggle}>
               <Menu size={16} />
             </button>
           </div>
@@ -44,7 +47,7 @@ const Navbar = () => {
               variant={"outline"}
               className="border rounded-1 hover:bg-primay-blue hover:text-white smooth border-primay-blue text-sm text-primay-blue"
             >
-              Sign In
+             <Link href="/sign-up">Get Started</Link>
             </Button>
             <motion.div className="" ref={constraintsRef}>
               <motion.div className="" drag dragConstraints={constraintsRef}>

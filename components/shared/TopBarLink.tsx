@@ -21,7 +21,7 @@ const TopBarLink: React.FC<TopBarLinkProps> = () => {
 
   return (
     <div className="bg-fade w-full">
-      <div className="w-full mx-auto max-w-[85%] p-2">
+      <div className="w-full mx-auto max-w-[82%] p-2">
         <div className="flex items-center justify-between w-full">
           <ul className=" gap-5 lg:flex hidden">
             {navLinks.map((link: navlink) => (

@@ -1,4 +1,5 @@
 
+import { Vacancies } from '@/components/global/Vacancies'
 import React from 'react'
 
 export const Main = () => {
@@ -6,7 +7,7 @@ export const Main = () => {
     <main>
         <section className='w-full mx-auto max-w-[85%] bg-transparent'>
             <div className="">
-                
+           
             </div>
         </section>
     </main>
