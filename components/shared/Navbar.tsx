@@ -29,7 +29,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
             <div className=" logo_section">
-              <Image src={logo} alt="logo-img " className="  w-40" />
+              <Image src={logo} alt="logo-img " className=" min-w-36  w-40" />
               <div className="sr-only">Logo-image</div>
             </div>
             <div className="ds:hidden xs:block">

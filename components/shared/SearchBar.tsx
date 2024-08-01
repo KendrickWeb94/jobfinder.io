@@ -4,7 +4,7 @@ import { Search } from "lucide-react";
 
 export const SearchBar = () => {
   return (
-    <div className="w-full max-w-2xl h-[35px] rounded-1 gap-3 flex items-center justify-center border border-light-border p-2">
+    <div className="w-full hover:border-primay-blue smooth max-w-2xl h-[35px] rounded-1 gap-3 flex items-center justify-center border border-light-border p-2">
       <div className=" lg:block hidden country-section">
         <CountrySelect />
       </div>

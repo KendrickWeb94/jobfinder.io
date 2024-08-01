@@ -1,15 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "../globals.css";
-import {
-  ClerkProvider,
-  SignInButton,
-  SignedIn,
-  SignedOut,
-  UserButton
-} from '@clerk/nextjs'
+import { ClerkProvider } from "@clerk/nextjs";
 import Navbar from "@/components/shared/Navbar";
-
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,13 +17,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-  <ClerkProvider >
-    <html lang='en' suppressHydrationWarning >
-      <body className="w-full h-auto">
-        <Navbar />
-        {children}
-      </body>
-    </html>
-  </ClerkProvider>
+    <ClerkProvider>
+      <html lang="en" suppressHydrationWarning className="open">
+        <body className="w-full h-auto">
+          <Navbar />
+          {children}
+        </body>
+      </html>
+    </ClerkProvider>
   );
 }
