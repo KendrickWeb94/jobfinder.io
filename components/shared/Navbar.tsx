@@ -32,12 +32,12 @@ const Navbar = () => {
               <Image src={logo} alt="logo-img " className=" min-w-36  w-40" />
               <div className="sr-only">Logo-image</div>
             </div>
-            <div className="ds:hidden xs:block">
+            <div className="ds:hidden sm:block">
               <SearchBar />
             </div>
           </div>
           <div className="flex items-center gap-4">
-            <Search size={17} className="text-primay-blue xs:hidden block" />
+            <Search size={17} className="text-primay-blue sm:hidden block" />
              <button className="flex mx-1 md:hidden items-center justify-center w-auto p-2 rounded-2 bg-primay-blue text-white" onClick={toggle}>
               <Menu size={16} />
             </button>
