@@ -52,7 +52,7 @@ const Navbar = () => {
              <Link href="/sign-up">Get Started</Link>
             </Button>
           </SignedOut>
-         <Link href="./routes/post">
+         <Link href="./post">
          <motion.div className="" ref={constraintsRef}>
               <motion.div className="" drag dragConstraints={constraintsRef}>
                 <button className=" w-28 p-3 h-auto rounded-1 flex items-center justify-center bg-primay-blue smooth hover:bg-transparent hover:text-primay-blue hover:border border-primay-blue text-white font-medium text-sm">
