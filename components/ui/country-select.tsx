@@ -56,7 +56,7 @@ export function CountrySelect() {
               <SelectGroup key={country.cca2}>
                 <SelectLabel>{country.name.common}</SelectLabel>
                 <SelectItem value={country.cca2}>
-                  <Image
+                  <img
                     src={country.flags?.png || ""}
                     alt={`${country.name.common} flag`}
                     width={16}
