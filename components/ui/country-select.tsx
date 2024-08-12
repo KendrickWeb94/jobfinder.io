@@ -1,7 +1,7 @@
 "use client";
 import * as React from "react";
-import Image from "next/image";
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import {
   Select,
   SelectContent,
@@ -26,8 +26,10 @@ interface Country {
 
 export function CountrySelect() {
   const [countries, setCountries] = useState<Country[]>([]);
+  const [selectedCountry, setSelectedCountry] = useState<string | null>(null);
 
   useEffect(() => {
+    // Fetch the countries data
     async function fetchCountries() {
       try {
         const response = await fetch("https://restcountries.com/v3.1/all");
@@ -39,10 +41,21 @@ export function CountrySelect() {
     }
 
     fetchCountries();
+
+    // Check for a saved country in localStorage
+    const savedCountry = localStorage.getItem("selectedCountry");
+    if (savedCountry) {
+      setSelectedCountry(savedCountry);
+    }
   }, []);
 
+  const handleSelect = (countryCode: string) => {
+    setSelectedCountry(countryCode);
+    localStorage.setItem("selectedCountry", countryCode);
+  };
+
   return (
-    <Select>
+    <Select value={selectedCountry ?? undefined} onValueChange={handleSelect}>
       <SelectTrigger className="w-[90px] border-0 border-none">
         <SelectValue
           placeholder="Country"
@@ -50,7 +63,7 @@ export function CountrySelect() {
         />
       </SelectTrigger>
       <SelectContent className="bg-white">
-        <div className="flex flex-wrap">
+        <div className="flex flex-wrap flex-col">
           {countries.length > 0 ? (
             countries.map((country) => (
               <SelectGroup key={country.cca2}>
@@ -61,7 +74,7 @@ export function CountrySelect() {
                     alt={`${country.name.common} flag`}
                     width={16}
                     height={16}
-                    className="inline-block mr-2"
+                    className="inline-block w-6 h-5 mr-2"
                   />
                   {country.name.common}
                 </SelectItem>

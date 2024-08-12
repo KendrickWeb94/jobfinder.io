@@ -22,7 +22,7 @@ export const Hero = () => {
               find the perfect job that suits you and what you want ,everything
               tailored for your desires and at no extra cost{" "}
             </p>
-            <div className=" max-w-lg open rounded-2 border-[0.5px] flex flex-wrap md:items-center md:justify-center gap-4 md:gap-2 border-gray-400/45 h-auto p-3 bg-white">
+            <div className=" max-w-xl open rounded-2 border-[0.5px] flex flex-wrap md:items-center md:justify-center gap-4 md:gap-2 border-gray-400/45 h-auto p-3 bg-white">
               <div className=" flex items-center gap-3">
                 <Search size={15} className=" text-primay-blue" />
                 <input
