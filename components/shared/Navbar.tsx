@@ -11,6 +11,7 @@ import { SearchBar } from "./SearchBar";
 import { Search, Menu } from "lucide-react";
 import { ResponsiveNavbar } from "../global/tools/ResponsiveNavbar";
 import Link from "next/link";
+import { SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
 
 const Navbar = () => {
    const [togglenav , settogglenav] = useState(false);
@@ -43,12 +44,14 @@ const Navbar = () => {
             </button>
           </div>
           <div className="md:flex hidden  items-center gap-4">
-            <Button
+          <SignedOut>
+          <Button
               variant={"outline"}
               className="border rounded-1 hover:bg-primay-blue hover:text-white smooth border-primay-blue text-sm text-primay-blue"
             >
              <Link href="/sign-up">Get Started</Link>
             </Button>
+          </SignedOut>
             <motion.div className="" ref={constraintsRef}>
               <motion.div className="" drag dragConstraints={constraintsRef}>
                 <button className=" w-28 p-3 h-auto rounded-1 flex items-center justify-center bg-primay-blue smooth hover:bg-transparent hover:text-primay-blue hover:border border-primay-blue text-white font-medium text-sm">
@@ -56,6 +59,9 @@ const Navbar = () => {
                 </button>
               </motion.div>
             </motion.div>
+            <SignedIn>
+                <UserButton />
+            </SignedIn>
           </div>
         </div>
       </div>
