@@ -22,7 +22,7 @@ const Navbar = () => {
   }
   return (
     <div className="w-full relative">
-      <div className={`md:hidden ds:block ${togglenav ? "-translate-x-[0rem] smooth" : "smooth -translate-x-[150rem]"}`}>
+      <div className={`md:hidden  ds:block ${togglenav ? "-translate-x-[0rem] h-screen fixed top-0 smooth" : "smooth fixed top-0 -translate-x-[150rem]"}`}>
         <ResponsiveNavbar />
       </div>
       <TopBarLink />
@@ -52,13 +52,14 @@ const Navbar = () => {
              <Link href="/sign-up">Get Started</Link>
             </Button>
           </SignedOut>
-            <motion.div className="" ref={constraintsRef}>
+         <Link href="./routes/post">
+         <motion.div className="" ref={constraintsRef}>
               <motion.div className="" drag dragConstraints={constraintsRef}>
                 <button className=" w-28 p-3 h-auto rounded-1 flex items-center justify-center bg-primay-blue smooth hover:bg-transparent hover:text-primay-blue hover:border border-primay-blue text-white font-medium text-sm">
                   Post A Job
                 </button>
               </motion.div>
-            </motion.div>
+            </motion.div></Link>
             <SignedIn>
                 <UserButton />
             </SignedIn>

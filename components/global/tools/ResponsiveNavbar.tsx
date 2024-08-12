@@ -19,7 +19,7 @@ export const ResponsiveNavbar: React.FC<TopBarLinkProps> = () => {
    settogglenav(!togglenav);
   }
   return (
-    <div className={`h-screen z-xl fixed top-0 bg-gray-400/25 ${togglenav ? "block" : "hidden"}`}>
+    <div className={`h-screen z-lg fixed top-0 bg-gray-400/25 ${togglenav ? "block" : "hidden"}`}>
       <div className="max-w-[250px] z-lg relative bg-white h-full p-3 shadow-sm">
         <button className="rounded-full absolute top-0 right-0 m-3 bg-gray-400/45 w-8 h-8 text-white flex items-center justify-center">
           <X size={16} />
