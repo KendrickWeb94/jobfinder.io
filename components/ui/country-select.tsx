@@ -1,6 +1,7 @@
-"use client"
+"use client";
 import * as React from "react";
-
+import Image from "next/image";
+import { useEffect, useState } from "react";
 import {
   Select,
   SelectContent,
@@ -10,91 +11,65 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import Image from "next/image";
-import ng from "@/public/flags/ng.png";
-import za from "@/public/flags/za.png";
-import gh from "@/public/flags/gh.png";
-import us from "@/public/flags/us.png";
-import gb from "@/public/flags/gb.png";
-import gn from "@/public/flags/gn.png";
-import gp from "@/public/flags/gp.png";
-import yt from "@/public/flags/yt.png";
 
-
+// Define the types for the country data
+interface Country {
+  cca2: string;
+  name: {
+    common: string;
+  };
+  flags: {
+    png: string;
+    svg: string;
+  };
+}
 
 export function CountrySelect() {
- 
+  const [countries, setCountries] = useState<Country[]>([]);
 
+  useEffect(() => {
+    async function fetchCountries() {
+      try {
+        const response = await fetch("https://restcountries.com/v3.1/all");
+        const data: Country[] = await response.json();
+        setCountries(data);
+      } catch (error) {
+        console.error("Error fetching countries:", error);
+      }
+    }
+
+    fetchCountries();
+  }, []);
 
   return (
     <Select>
-      <SelectTrigger className="w-[90px] border-0 border-none ">
-        <SelectValue placeholder="Country" className="text-sm placeholder:text-light-border text-text-light" />
+      <SelectTrigger className="w-[90px] border-0 border-none">
+        <SelectValue
+          placeholder="Country"
+          className="text-sm placeholder:text-light-border text-text-light"
+        />
       </SelectTrigger>
       <SelectContent className="bg-white">
-        <div className="flex">
-          <SelectGroup>
-            <SelectLabel></SelectLabel>
-            <SelectItem
-              data-value="ng"
-             
-              value="ng"
-            >
-              <Image src={ng} alt="" />
-            </SelectItem>
-            <SelectItem
-              data-value="gh"
-          
-              value="gh"
-            >
-              <Image src={gh} alt="" />
-            </SelectItem>
-            <SelectItem
-              data-value="za"
-             
-              value="za"
-            >
-              <Image src={za} alt="" />
-            </SelectItem>
-            <SelectItem
-              data-value="us"
-           
-              value="us"
-            >
-              <Image src={us} alt="" />
-            </SelectItem>
-            <SelectItem
-              data-value="gb"
-            
-              value="gb"
-            >
-              <Image src={gb} alt="" />
-            </SelectItem>
-          </SelectGroup>
-          <SelectGroup>
-            <SelectLabel></SelectLabel>
-            <SelectItem
-              data-value="gn"
-              
-              value="gn"
-            >
-              <Image src={gn} alt="" />
-            </SelectItem>
-            <SelectItem
-              data-value="gp"
-        
-              value="gp"
-            >
-              <Image src={gp} alt="" />
-            </SelectItem>
-            <SelectItem
-              data-value="yt"
-              
-              value="yt"
-            >
-              <Image src={yt} alt="" />
-            </SelectItem>
-          </SelectGroup>
+        <div className="flex flex-wrap">
+          {countries.length > 0 ? (
+            countries.map((country) => (
+              <SelectGroup key={country.cca2}>
+                <SelectLabel>{country.name.common}</SelectLabel>
+                <SelectItem value={country.cca2}>
+                  <Image
+                    src={country.flags?.png || ""}
+                    alt={`${country.name.common} flag`}
+                    width={16}
+                    height={16}
+                    className="inline-block mr-2"
+                  />
+                  {country.name.common}
+                </SelectItem>
+              </SelectGroup>
+            ))
+          ) : (
+            <div>Loading countries...</div>
+          )}
         </div>
       </SelectContent>
     </Select>
