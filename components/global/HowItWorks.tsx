@@ -14,7 +14,7 @@ export const HowItWorks = () => {
           <div className="w-full h-full flex flex-wrap items-center justify-center">
             <div className="box-1 smooth items-center justify-center rounded-2 w-64 hover:bg-white p-4 bg-transparent flex flex-col gap-5">
               <div className="rounded-full bg-white  w-14 h-14 p-3 flex items-center justify-center">
-                <User size={21} stroke="#0A65CC" fill="#a7cfe4" className="" />
+                <User size={21} stroke="#0A65CC" fill="#dbeafe" className="" />
               </div>
               <div className="">
                 <h1 className=" text-gray-800 text-center font-semibold text-sm">
@@ -31,7 +31,7 @@ export const HowItWorks = () => {
                 <CloudDownload
                   size={21}
                   stroke="#0A65CC"
-                  fill="#a7cfe4"
+                  fill="#dbeafe"
                   className=""
                 />
               </div>
@@ -49,7 +49,7 @@ export const HowItWorks = () => {
                 <SearchCheck
                   size={21}
                   stroke="#0A65CC"
-                  fill="#a7cfe4"
+                  fill="#dbeafe"
                   className=""
                 />
               </div>
@@ -67,7 +67,7 @@ export const HowItWorks = () => {
                 <VerifiedIcon
                   size={21}
                   stroke="#0A65CC"
-                  fill="#a7cfe4"
+                  fill="#dbeafe"
                   className=""
                 />
               </div>

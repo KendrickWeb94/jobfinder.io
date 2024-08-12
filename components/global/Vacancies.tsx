@@ -18,9 +18,9 @@ const Vacancies: React.FC<VacanciesProps> = ({ data }) => {
             Most Popular Vacancies
           </h1>
           <div className="pt-1">
-            <ul className="flex-wrap flex gap-14">
+            <ul className="grid grid-cat">
               {data.map((item) => (
-                <li key={item.id} className="flex flex-col poppins">
+                <li key={item.id} className="flex flex-col gap-1">
                   <h3 className="text-sm text-gray-800 font-medium hover:underline hover:text-primay-blue smooth  hover:underline-offset-3 hover:cursor-pointer">{item.job}</h3>
                   <h3 className="text-[12px] text-gray-500 font-normal">{item.availability}</h3>
                 </li>

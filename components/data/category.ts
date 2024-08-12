@@ -1,12 +1,11 @@
 export interface Category {
   id: number;
-  icon: any;
   catname: string;
   catpositions: string;
 }
+
 import {
-  PenIcon,
-  Code,
+  Pen,
   Megaphone,
   Tv,
   Music,
@@ -15,53 +14,46 @@ import {
   Database,
 } from "lucide-react";
 
-const categoryData: Category[] = [
+const Category: Category[] = [
   {
     id: 1,
-    icon: "",
-    catname: "Graphics & Design",
+    name: "Graphics & Design",
     catpositions: "357 Open position",
   },
   {
     id: 2,
-    icon: Code,
-    catname: "Code & Programing",
+    atname: "Code & Programing",
     catpositions: "312 Open position",
   },
   {
     id: 3,
-    icon: Megaphone,
-    catname: "Digital Marketing",
+        catname: "Digital Marketing",
     catpositions: "297 Open position",
   },
   {
     id: 4,
-    icon: Tv,
-    catname: "Video & Animation",
+    name: "Video & Animation",
     catpositions: "247 Open position",
   },
   {
     id: 5,
-    icon: Music,
     catname: "Music & Audio",
     catpositions: "204 Open position",
   },
   {
     id: 6,
-    icon: Building,
-    catname: "Account & Finance",
+       catname: "Account & Finance",
     catpositions: "167 Open position",
   },
   {
     id: 7,
-    icon: HeartPulse,
+    
     catname: "Health & Care",
     catpositions: "125 Open position",
   },
   {
     id: 8,
-    icon: Database,
-    catname: "Data & Science",
+       catname: "Data & Science",
     catpositions: "57 Open position",
   },
 ];
