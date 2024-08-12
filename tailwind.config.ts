@@ -26,7 +26,7 @@ const config = {
         "bs": "520px"
       },
       colors: {
-        "primay-blue": "#0A65CC" ,
+        "primay-blue": "#fbbf24" ,
         "fade": "#F1F2F4", 
         "link-text": "#5E6670",
         "text-light": "#9199A3",
