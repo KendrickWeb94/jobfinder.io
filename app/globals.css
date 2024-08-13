@@ -27,6 +27,12 @@
   z-index: -1;
 }
 
+.cover-top {
+background: url(../public/img/auth-img.jpg);
+background-position: center;
+background-size: contain;
+ background-repeat: no-repeat; 
+}
 
 img {
   width: 100%;

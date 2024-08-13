@@ -63,11 +63,10 @@ export function CountrySelect() {
         />
       </SelectTrigger>
       <SelectContent className="bg-white">
-        <div className="flex flex-wrap flex-col">
+        <div className="flex flex-wrap gap-4 flex-col">
           {countries.length > 0 ? (
             countries.map((country) => (
               <SelectGroup key={country.cca2}>
-                <SelectLabel>{country.name.common}</SelectLabel>
                 <SelectItem value={country.cca2}>
                   <img
                     src={country.flags?.png || ""}
