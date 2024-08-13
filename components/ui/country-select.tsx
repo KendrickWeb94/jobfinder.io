@@ -81,7 +81,7 @@ export function CountrySelect() {
               </SelectGroup>
             ))
           ) : (
-            <div>Loading countries...</div>
+            <div className=" text-sm">Loading countries...</div>
           )}
         </div>
       </SelectContent>

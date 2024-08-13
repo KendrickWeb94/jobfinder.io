@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { CloudDownload, SearchCheck, User, VerifiedIcon } from "lucide-react";
 import React from "react";
 
@@ -40,7 +41,7 @@ export const HowItWorks = () => {
                   Upload CV/Resume
                 </h1>
                 <p className=" text-gray-500 text-center text-balance pt-3 font-normal text-xs">
-                  Create account an account with us to gain access
+                Upload your cv or resume to attract potential employers
                 </p>
               </div>
             </div>
@@ -58,7 +59,7 @@ export const HowItWorks = () => {
                   Find Suitable Job
                 </h1>
                 <p className=" text-gray-500 text-center text-balance pt-3 font-normal text-xs">
-                  Create account an account with us to gain access to{" "}
+                  Jobfinder has a ton of available jobs, pick what suits you{" "}
                 </p>
               </div>
             </div>
@@ -76,8 +77,7 @@ export const HowItWorks = () => {
                   Apply Job
                 </h1>
                 <p className=" text-gray-500 text-center text-balance pt-3 font-normal text-xs">
-                  Create account an account with us to gain access to features
-                  like upload{" "}
+                  Now that you're all set apply for the job of your choice, that simple{" "}
                 </p>
               </div>
             </div>
