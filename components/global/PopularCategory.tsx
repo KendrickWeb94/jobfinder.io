@@ -17,15 +17,15 @@ import {
 
 export const PopularCategory: React.FC= () => {
   return (
-    <div className="w-full border-b border-gray-500/50">
+    <div className="w-full border-b border-gray-300/25">
       <div className="w-full bg-white p-3 min-h-[60vh]">
         <div className="w-full py-6 mx-auto h-full max-w-[82%]">
           <div className="flex flex-wrap justify-between gap-10">
             <h1 className="text-gray-800 poppins text-4xl ds:text-center md:text-left text-balance font-medium">
               Popular Categories
             </h1>
-            <Button variant={"outline"} className="p-2 w-full  smooth hover:text-white text-primay-blue hover:bg-primay-blue md:w-auto px-7 smooth rounded-1 border border-primay-blue/45 flex gap-3 items-center justify-center">
-              <p className="font-medium text-sm">See All</p> <ArrowRight />
+            <Button variant={"outline"} className="p-2 w-full  smooth hover:text-white text-primay-blue hover:bg-primay-blue md:w-auto px-5 smooth rounded-1 border border-primay-blue/45 flex gap-3 items-center justify-center">
+              <p className="font-medium text-sm">See All</p> <ArrowRight  size="17"/>
             </Button>
           </div>
           <div className="pt-10">

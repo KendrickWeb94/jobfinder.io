@@ -13,6 +13,7 @@ import { ResponsiveNavbar } from "../global/tools/ResponsiveNavbar";
 import Link from "next/link";
 import { SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
 
+
 const Navbar = () => {
   const [togglenav, settogglenav] = useState(false);
   const constraintsRef = useRef(null);
@@ -61,7 +62,7 @@ const Navbar = () => {
                 <Link href="/sign-up">Get Started</Link>
               </Button>
             </SignedOut>
-            <Link href="./post">
+            <Link href="../post">
               <motion.div className="" ref={constraintsRef}>
                 <motion.div className="" drag dragConstraints={constraintsRef}>
                   <button className=" w-28 p-3 h-auto rounded-1 flex items-center justify-center bg-primay-blue smooth hover:bg-transparent hover:text-primay-blue hover:border border-primay-blue text-white font-medium text-sm">
@@ -69,6 +70,7 @@ const Navbar = () => {
                   </button>
                 </motion.div>
               </motion.div>
+              
             </Link>
             <SignedIn>
               <UserButton />

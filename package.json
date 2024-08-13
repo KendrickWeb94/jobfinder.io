@@ -11,6 +11,8 @@
     "dependencies": {
         "@clerk/nextjs": "^5.2.4",
         "@gsap/react": "^2.1.1",
+        "@mui/material": "^5.16.7",
+        "@mui/styled-engine-sc": "^6.0.0-alpha.18",
         "@radix-ui/react-accordion": "^1.2.0",
         "@radix-ui/react-alert-dialog": "^1.1.1",
         "@radix-ui/react-aspect-ratio": "^1.1.0",
@@ -34,6 +36,7 @@
         "react-dom": "^18",
         "react-icons": "^5.2.1",
         "react-toastify": "^10.0.5",
+        "styled-components": "^6.1.12",
         "tailwind-merge": "^2.4.0",
         "tailwindcss-animate": "^1.0.7"
     },
