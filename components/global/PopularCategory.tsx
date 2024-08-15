@@ -31,11 +31,10 @@ export const PopularCategory: React.FC= () => {
           <div className="pt-10">
             <div className="grid grid-cat-2 gap-6">
               <div className=" hover:shadow-xl smooth p-3 flex items-center gap-5 roudded-md">
-                <div className=" w-12 h-12 p-3 text-primay-blue rounded-1 hover:bg-primay-blue hover:text-white bg-[#fef9c3] flex items-center justify-center">
+                <div className=" w-12 h-12 p-3 text-primay-blue rounded-1 hover:bg-primay-blue hover:text-white bg-indigo-100 flex items-center justify-center">
                   <span>
                     <Pen 
                      size={18}
-                    
                      className=""
                      />
                   </span>
@@ -46,7 +45,7 @@ export const PopularCategory: React.FC= () => {
                </div>
               </div>
               <div className=" hover:shadow-xl smooth p-3 flex items-center gap-5 roudded-md">
-                <div className=" w-12 h-12 p-3 text-primay-blue rounded-1 hover:bg-primay-blue hover:text-white bg-[#fef9c3] flex items-center justify-center">
+                <div className=" w-12 h-12 p-3 text-primay-blue rounded-1 hover:bg-primay-blue hover:text-white bg-indigo-100 flex items-center justify-center">
                   <span>
                     <Code
                      size={18}
@@ -61,7 +60,7 @@ export const PopularCategory: React.FC= () => {
                </div>
               </div>
               <div className=" hover:shadow-xl smooth p-3 flex items-center gap-5 roudded-md">
-                <div className=" w-12 h-12 p-3 text-primay-blue rounded-1 hover:bg-primay-blue hover:text-white bg-[#fef9c3] flex items-center justify-center">
+                <div className=" w-12 h-12 p-3 text-primay-blue rounded-1 hover:bg-primay-blue hover:text-white bg-indigo-100 flex items-center justify-center">
                   <span>
                     <Megaphone 
                      size={18}
@@ -76,7 +75,7 @@ export const PopularCategory: React.FC= () => {
                </div>
               </div>
               <div className=" hover:shadow-xl smooth p-3 flex items-center gap-5 roudded-md">
-                <div className=" w-12 h-12 p-3 text-primay-blue rounded-1 hover:bg-primay-blue hover:text-white bg-[#fef9c3] flex items-center justify-center">
+                <div className=" w-12 h-12 p-3 text-primay-blue rounded-1 hover:bg-primay-blue hover:text-white bg-indigo-100 flex items-center justify-center">
                   <span>
                     <Tv
                      size={18}
@@ -91,7 +90,7 @@ export const PopularCategory: React.FC= () => {
                </div>
               </div>
               <div className=" hover:shadow-xl smooth p-3 flex items-center gap-5 roudded-md">
-                <div className=" w-12 h-12 p-3 text-primay-blue rounded-1 hover:bg-primay-blue hover:text-white bg-[#fef9c3] flex items-center justify-center">
+                <div className=" w-12 h-12 p-3 text-primay-blue rounded-1 hover:bg-primay-blue hover:text-white bg-indigo-100 flex items-center justify-center">
                   <span>
                     <Music
                      size={18}
@@ -106,7 +105,7 @@ export const PopularCategory: React.FC= () => {
                </div>
               </div>
               <div className=" hover:shadow-xl smooth p-3 flex items-center gap-5 roudded-md">
-                <div className=" w-12 h-12 p-3 text-primay-blue rounded-1 hover:bg-primay-blue hover:text-white bg-[#fef9c3] flex items-center justify-center">
+                <div className=" w-12 h-12 p-3 text-primay-blue rounded-1 hover:bg-primay-blue hover:text-white bg-indigo-100 flex items-center justify-center">
                   <span>
                     <Building 
                      size={18}
@@ -121,7 +120,7 @@ export const PopularCategory: React.FC= () => {
                </div>
               </div>
               <div className=" hover:shadow-xl smooth p-3 flex items-center gap-5 roudded-md">
-                <div className=" w-12 h-12 p-3 text-primay-blue rounded-1 hover:bg-primay-blue hover:text-white bg-[#fef9c3] flex items-center justify-center">
+                <div className=" w-12 h-12 p-3 text-primay-blue rounded-1 hover:bg-primay-blue hover:text-white bg-indigo-100 flex items-center justify-center">
                   <span>
                     <HeartPulse
                      size={18}
@@ -136,7 +135,7 @@ export const PopularCategory: React.FC= () => {
                </div>
               </div>
               <div className=" hover:shadow-xl smooth p-3 flex items-center gap-5 roudded-md">
-                <div className=" w-12 h-12 p-3 text-primay-blue rounded-1 hover:bg-primay-blue hover:text-white bg-[#fef9c3] flex items-center justify-center">
+                <div className=" w-12 h-12 p-3 text-primay-blue rounded-1 hover:bg-primay-blue hover:text-white bg-indigo-100 flex items-center justify-center">
                   <span>
                     <Database 
                      size={18}

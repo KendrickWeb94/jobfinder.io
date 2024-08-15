@@ -5,8 +5,14 @@ import { HowItWorks } from "@/components/global/HowItWorks";
 import { PopularCategory } from "@/components/global/PopularCategory";
 import JobList from "@/components/global/JobList"; // Import the JobList component
 import { vacancyData } from "@/components/data/vacancy";
+import Companies from "@/components/global/TopCompanies";
+import { Testimonials } from "@/components/global/Testimonials";
+
 
 const Page: React.FC = () => {
+  {/* let job:JobProps ={
+    name:"chile"
+  }*/}
   return (
     <div className="">
       <Hero />
@@ -14,6 +20,9 @@ const Page: React.FC = () => {
       <HowItWorks />
       <PopularCategory />
       <JobList />
+      <Companies />
+      <Testimonials />
+    {/*   {job.name}*/}
       <br />
     </div>
   );

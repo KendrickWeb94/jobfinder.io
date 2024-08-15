@@ -16,6 +16,10 @@
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 2rem;
 }
+.grid-cat-3 {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
 
 
 .grid-cat-2 {
@@ -26,14 +30,6 @@
 .z-1 {
   z-index: -1;
 }
-
-.cover-top {
-background: url(../public/img/auth-img.jpg);
-background-position: center;
-background-size: contain;
- background-repeat: no-repeat; 
-}
-
 img {
   width: 100%;
   height: auto;
@@ -46,9 +42,15 @@ img {
   z-index: 999999999999;
 }
 
+.z-2xl{
+  z-index: 9999999999999999;
+}
+
 .rounded-1 {
   border-radius: 3px;
 }
+
+
 
 .rounded-2 {
   border-radius: 8px;

@@ -56,7 +56,7 @@ export function CountrySelect() {
 
   return (
     <Select value={selectedCountry ?? undefined} onValueChange={handleSelect}>
-      <SelectTrigger className="w-[90px] border-0 border-none">
+      <SelectTrigger className="w-[90px]  border-0 border-none">
         <SelectValue
           placeholder="Country"
           className="text-sm placeholder:text-light-border text-text-light"
