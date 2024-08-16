@@ -7,6 +7,8 @@ import JobList from "@/components/global/JobList"; // Import the JobList compone
 import { vacancyData } from "@/components/data/vacancy";
 import Companies from "@/components/global/TopCompanies";
 import { Testimonials } from "@/components/global/Testimonials";
+import CanOrEmp from "@/components/global/CanOrEmp";
+
 
 
 const Page: React.FC = () => {
@@ -22,6 +24,7 @@ const Page: React.FC = () => {
       <JobList />
       <Companies />
       <Testimonials />
+      <CanOrEmp />
     {/*   {job.name}*/}
       <br />
     </div>

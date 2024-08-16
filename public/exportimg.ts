@@ -15,6 +15,9 @@ import user4 from "@/public/img/testimonial/user6.jpg"
 import user5 from "@/public/img/testimonial/hero4.png"
 import user6 from "@/public/img/testimonial/user5.jpg"
 import user7 from "@/public/img/testimonial/hero8.png"
+import footerlogo from "@/public/img/footer/footer-logo.svg"
+import candidate from "@/public/img/static/Candidate & Employers.jpg"
+import employer from "@/public/img/static/Candidate & Employers-1.jpg"
 
 export {
     amazon,
@@ -33,5 +36,8 @@ export {
     user4,
     user5,
     user6,
-    user7
+    user7,
+    footerlogo,
+    candidate,
+    employer
 }

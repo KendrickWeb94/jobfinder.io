@@ -24,6 +24,12 @@
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 }
 
+
+.grid-cat-footer {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
 .z-1 {
   z-index: -1;
 }
