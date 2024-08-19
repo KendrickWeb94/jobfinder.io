@@ -75,11 +75,11 @@ export const topCompanies: TopCompanies[] = [
 
   {
     postion: "(15)",
-    company: "Apple",
+    company: "Netflix",
     companyimg: netflix,
     location: {
-      city: "Sydney",
-      country: "Australia",
+      city: "Los Angeles",
+      country: "USA",
     },
     availabilty: "Closed",
   },
