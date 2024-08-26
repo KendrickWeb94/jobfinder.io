@@ -81,7 +81,7 @@ export const Testimonials = () => {
               </div>
             ))}
           </div>*/}
-          <OwlCarousel responsive={Responsive} loop={true}>
+          <OwlCarousel responsive={Responsive} loop={true} autoplay={true}>
             <div className="item">
               <div className="rounded-2 shadow-sm  bg-white p-4">
                 <div className="flex-col flex gap-6">
